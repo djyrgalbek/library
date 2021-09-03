@@ -1,0 +1,404 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+div
+{
+    box-sizing: border-box;
+}
+a, button, input
+{
+    cursor: pointer;
+}
+a
+{
+    text-transform: none;
+}
+.page
+{
+    max-width: 1080px;
+    width: 100%;
+    background: #d9d9d9;
+    margin: 0 auto;
+}
+.head
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 2px solid #9c9999;
+}
+.logo
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 30px;
+}
+.logo__img
+{
+    width: auto;
+}
+.logo__img--size_l
+{
+    height: 60px;
+}
+.logo__img--size_s
+{
+    height: 30px;
+}
+.logo__title
+{
+    font-family: 'Pacifico', cursive;
+    color: #3a3a3a;
+    margin-left: 0.7em;
+}
+.logo__title--size_l
+{
+    font-size: 35px
+}
+.logo__title--size_s
+{
+    font-size: 17.5px
+}
+.search-form
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    max-width: 365px;
+    width: 100%;
+}
+.search-form__input
+{
+    width: 100%;
+    height: auto;
+    padding: 9px 42px 9px 15px;
+    box-sizing: border-box;
+    border: 1px solid #afabab;
+    font: normal 14px "Open Sans", sans-serif;
+    color: #afabab;
+    border-radius: 25px;
+}
+.search__button
+{
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+    margin-left: -40px;
+}
+
+
+/*==================================
+    Боковая колонка сайта (Sidebar)
+==================================*/
+.container
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+}
+.sidebar
+{
+    max-width: 220px;
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+.sidebar__flag
+{
+    width: 24px;
+    height: auto;
+}
+.sidebar__flag:hover
+{
+    cursor: pointer;
+}
+.admin
+{
+    text-align: center;
+}
+.admin__title
+{
+    font: bold 16px "Open Sans", sans-serif;
+    color: #000;
+    line-height: 26px;
+}
+.button
+{
+    padding: 6px 24px;
+    background: #cacaca;
+    box-shadow: inset 3px 3px 5px #6d6b6b,
+    inset -3px -3px 5px #6d6b6b;
+}
+.button:hover
+{
+    box-shadow: 0px 3px 5px #3e4546;
+}
+.button[disabled]
+{
+    box-shadow: none;
+    background: #cacaca;
+    color: #868686;
+}
+.admin__button
+{
+    margin-top: 12px;
+    font: normal 14px "Open Sans", sans-serif;
+    color: #000;
+}
+.nav
+{
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background: #c2c2c2;
+}
+.nav--margin_top
+{
+    margin-top: 50px;
+}
+.nav__item
+{
+    list-style-type: none;
+}
+.nav__link,.result-search__link
+{
+    font: normal 16px "Open Sans", sans-serif;
+    color: #000;
+    line-height: 25px;
+}
+.nav__link:hover,.result-search__link:hover
+{
+    color: #065563;
+}
+.nav__link:active,.result-search__link:active
+{
+    color: #000;
+}
+/*==================================
+    Контент (content)
+==================================*/
+.content
+{
+    max-width: 860px;
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+    padding-bottom: 50px;
+    border-left: 2px solid #9c9999;
+}
+.users,.control,.info,.result-search
+{
+    max-width: 500px;
+    width: 100%;
+    margin: 25px 90px 0;
+}
+.users__title,.info__title,.result-search__title
+{
+    text-decoration: underline;
+    font: bold 25px "Open Sans", sans-serif;
+    color: #000;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.users__sub-title
+{
+    font: bold 16px "Open Sans", sans-serif;
+    color: #000;
+    margin-bottom: 5px;
+}
+.list
+{
+    width: 100%;
+    background: #afabab;
+    padding: 6px 15px;
+    font: normal 14px "Open Sans", sans-serif;
+    color: #3b3838;
+}
+.list--margin_top_m
+{
+    margin-top: 23px;
+}
+.list--margin_top_s
+{
+    margin-top: 10px;
+}
+.list[disabled]
+{
+    background: #cacaca;
+    color: #868686;
+}
+.control
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.control--margin-top_large
+{
+    margin-top: 182px;
+}
+.control--margin-top_medium
+{
+    margin-top: 50px;
+}
+.control__button
+{
+    font: normal 15px "Open Sans", sans-serif;
+    color: #3b3838;
+    vertical-align: middle;
+}
+.control__button--size_3
+{
+    width: 32%;
+}
+.control__button--size_2
+{
+    width: 40%;
+}
+.control__button--size_1
+{
+    width: 100%;
+}
+
+
+/*==================================
+    Регистрация (registration)
+==================================*/
+.form
+{
+    width: 100%;
+}
+.form__title
+{
+    font: normal 15px "Open Sans", sans-serif;
+    color: #000;
+    margin-top: 12px;
+}
+.form__input
+{
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    background: #fff;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.form_box
+{
+    max-width: 320px;
+    width: 100%;
+}
+.form__row
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.form__input--width_m
+{
+    max-width: 150px;
+    width: 100%;
+}
+.form__input--width_s
+{
+    max-width: 130px;
+    width: 100%;
+    float: right;
+}
+
+
+/*==================================
+    Инфо (user)
+==================================*/
+
+.info__title
+{
+    text-align: left;
+}
+.info__name
+{
+    font: normal 16px "Open Sans", sans-serif;
+    color: #000;
+}
+.info__name--margin_top
+{
+    margin-top: 40px;
+}
+.info__table
+{
+    width: 100%;
+    border: 1px dashed #000;
+    margin-top: 45px;
+}
+.info__table th
+{
+    color: #fff;
+    background: #4e9e18;
+}
+.info__table th,.info__table td
+{
+    font: normal 16px "Open Sans", sans-serif;
+    width: 33.333333%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.info__button
+{
+    margin-top: 70px;
+}
+.info__table tr td
+{
+    text-align: center;
+}
+.info__table tr:nth-child(even)
+{
+    background: #c9c9c9;;
+}
+.info__table tr:nth-child(odd)
+{
+    background: #999999;
+}
+
+
+
+/*==================================
+    Результаты поиска (results_search)
+==================================*/
+.result-search
+{
+    text-align: center;
+}
+.result-search__empty
+{
+    font: normal 16px "Open Sans", sans-serif;
+    color: #e23213;
+}
+
+
+/*==================================
+    Подвал 
+==================================*/
+.footer
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 25px;
+    background: #575757;
+}
+.copyright
+{
+    padding: 10px 0;
+    font: normal 15px "Open Sans", sans-serif;
+    color: #fff;
+}
